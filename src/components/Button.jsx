@@ -3,6 +3,8 @@ import './button.css';
 
 export default props => {
     return (
-        <button>{props.label}</button>
+        <button onClick={() => props.click(props.label)}>
+            {props.label}
+        </button>
     )
 }
